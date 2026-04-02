@@ -12,21 +12,21 @@ Ranked by estimated long-term debt outstanding (descending).
 | # | Institution | Moody's Rating | S&P Rating | Outlook | Est. LT Debt ($B) | DSCR | Recent Rating Action |
 |---|-------------|---------------|------------|---------|-------------------|------|---------------------|
 | 1 | Advocate Health (Atrium Health) | Aa2 | Not Found | Stable | ~$7.4 [UNVERIFIED] | Not Found | Upgraded from Aa3 to Aa2 (Oct 2025, Moody's) |
-| 2 | UPMC | A2 | A | Stable | ~$6.2 | Not Found | Affirmed A2, stable (Mar 2025, Moody's); Affirmed A, stable (Mar 2025, S&P) |
+| 2 | UPMC | A2 | A | Stable | ~$6.2+ | Not Found | Affirmed A2, stable (Mar 2025, Moody's); Affirmed A, stable (Mar 2025, S&P); Fitch outlook went negative then back to stable after 2025 turnaround; **$1.6B bond issuance in 2025 (largest ever) after two years of operating losses** |
 | 3 | Mass General Brigham | Aa3 | Not Found | Stable | ~$6.0 [UNVERIFIED — 2022 data] | Not Found | Affirmed Aa3, stable (Moody's) |
 | 4 | Cleveland Clinic | Aa2 | AA | Stable | ~$5.0 [UNVERIFIED] | Not Found | Affirmed Aa2, stable (Moody's); $440M new issuance (OH, 2025) |
-| 5 | Northwell Health | A3 [UNVERIFIED] | A- [UNVERIFIED] | Stable | ~$4.9 | Not Found | Fitch assigned A- to 2024A and 2025A revenue bonds (Sept 2024) |
+| 5 | Northwell Health | A3 | A- | Stable | ~$4.9 | Not Found | Affirmed A3, stable (Sept 2024, Moody's); Fitch A- (Sept 2024); **$762.8M bond issuance (2024) while operating margin 1.2–1.6%; Q3 2025 margin compressed to 0.5%** |
 | 6 | Mayo Clinic | Aa2 | AA | Stable | ~$4.7 | Not Found | Affirmed Aa2 (Moody's); ~$400M Series 2025 bonds issued |
 | 7 | Intermountain Health | Aa1 | AA+ | Stable | ~$4.3 [UNVERIFIED] | Not Found | Affirmed Aa1, stable (Moody's) |
-| 8 | Baylor Scott & White Health | Aa2 | Not Found | Stable | ~$4.0 | Not Found | Upgraded from Aa3 to Aa2 (Feb 2025, Moody's) |
+| 8 | Baylor Scott & White Health | Aa2 | AA- | Stable | ~$3.9 | Not Found | Upgraded from Aa3 to Aa2 (Feb 2025, Moody's); S&P AA-; deleveraging (debt down from $4.2B); operating margin 10%+ |
 | 9 | NYU Langone Health | A1 | A+ | Stable | ~$3.2 | Not Found | Affirmed A1, stable (Feb 2025, Moody's); Affirmed A+, stable (Sept 2024, S&P) |
-| 10 | Stanford Health Care | Aa2 | AA- | Stable | ~$2.7 | Not Found | Rated Aa2/AA-/AA (Moody's/S&P/Fitch); 2025 bonds issued |
+| 10 | Stanford Health Care | Aa2 | AA- | Stable | ~$2.2 | Not Found | **Upgraded from Aa3 to Aa2** (May 2025, Moody's); Fitch AA; S&P AA-; ~$425M 2025 bonds issued; ~9% operating cash flow margin |
 | 11 | Johns Hopkins Health System | Aa2 | Not Found | Stable | ~$1.9 [UNVERIFIED — 2022 data] | Not Found | Affirmed Aa2, stable (Moody's) |
 | 12 | Yale New Haven Health | A1 | Not Found | Stable | ~$1.7 | Not Found | **Downgraded from Aa3 to A1** (May 2023, Moody's); Fitch A+ on $669M new issuance (May 2024) |
 | 13 | Cedars-Sinai Medical Center | Aa3 | Not Found | Stable | ~$1.1 [UNVERIFIED] | Not Found | Affirmed Aa3, stable (Moody's) |
 | 14 | UC Health (Colorado) | Aa3 | Not Found | Positive | ~$1.1 [UNVERIFIED — 2021 data] | Not Found | Outlook revised to positive from stable (Feb 2021, Moody's) |
 | 15 | Northwestern Memorial HealthCare | Aa2 | AA+ [UNVERIFIED] | Stable | ~$1.7 | Not Found | Affirmed Aa2, stable (Moody's); operating margin 3.6% (FY2024) |
-| 16 | OSF HealthCare | A2 | A | Stable [UNVERIFIED] | ~$1.1 | Not Found | Affirmed A2 (Moody's); Affirmed A, stable (S&P) |
+| 16 | OSF HealthCare | **Withdrawn** (Oct 2022) | A | Stable | Not Found | Not Found | Moody's A2 rating **withdrawn** (Oct 2022 — contract terminated); Fitch upgraded to A+ (Apr 2023); S&P A, stable; operating margin -3.0% (FY2022), ~0% (FY2023), 0.3% (FY2024) |
 | 17 | Vanderbilt University Medical Center | A3 | Not Found | Stable | ~$0.9 | Not Found | Affirmed A3, outlook moved to stable (Moody's, 2019) |
 | 18 | WakeMed Health | A2 | Not Found | Stable | ~$0.76 | Not Found | Outlook revised to stable from negative; A2 affirmed (Jun 2024, Moody's) |
 | 19 | Duke University Health System | Aa3 | AA- | Stable | ~$2.1 | Not Found | **Downgraded from Aa2 to Aa3** (Dec 2022, Moody's); Fitch AA- affirmed on $254M Series 2025C/D/E (Dec 2025); issued ~$743M in new bonds in 2025 at -1.5% operating margin |
@@ -51,7 +51,7 @@ Ranked by estimated long-term debt outstanding (descending).
 | Northwell Health | A3 | A- | ~$4.9 |
 | NYU Langone Health | A1 | A+ | ~$3.2 |
 | Yale New Haven Health | A1 | N/F | ~$1.7 |
-| OSF HealthCare | A2 | A | ~$1.1 |
+| OSF HealthCare | Withdrawn | A | N/F |
 | Vanderbilt UMC | A3 | N/F | ~$0.9 |
 | WakeMed | A2 | N/F | ~$0.76 |
 | Ochsner Health | A3 | A | N/F |
@@ -74,17 +74,20 @@ Extrapolating for the 6 institutions with missing debt data (Penn Medicine, U of
 
 ### Top 3 Most Exposed Institutions
 
-1. **UPMC** — $6.2B in long-term debt at A2/A ratings, combined with **operating losses of -$339M in 2024** and new bond issuance (Series 2025A/B, $713M) while operating margin was deeply negative; the most exposed credit profile in this cohort.
+1. **UPMC** — $6.2B+ in long-term debt at A2/A ratings, combined with **two consecutive years of operating losses** (-$198M FY2023, -$339M FY2024) and a **$1.6B bond issuance in 2025 — its largest ever** — while margins were deeply negative. Fitch moved outlook to negative before revising back to stable after 2025 operating turnaround. The most exposed credit profile in this cohort.
 
-2. **Northwell Health** — $4.9B in long-term debt at the lowest ratings in the cohort (A3/A-/A-), operating in the highly competitive and cost-pressured New York market with significant exposure to Medicaid reimbursement and state regulatory risk.
+2. **Northwell Health** — $4.9B in long-term debt at the lowest ratings in the cohort (A3/A-), issued **$762.8M in bonds in 2024 while operating margin was 1.2–1.6%**, and margins have compressed further to **0.5% in Q3 2025**. Operates in the highly competitive and cost-pressured New York market with significant Medicaid exposure.
 
-3. **Emory Healthcare** — Operating under Moody's negative outlook on its parent university, planning $1B+ in new debt issuance while Moody's explicitly cites "weak operating performance stemming largely from Emory Healthcare" as the driver of credit deterioration.
+3. **Duke University Health System** — Downgraded from Aa2 to Aa3 (Dec 2022), issued **~$743M in new bonds in 2025 while operating at -1.5% adjusted margin**. Fitch affirmed AA- but flagged sustained margin improvement as key to holding the rating. Acquisition-driven debt growth amid negative operating performance.
+
+4. **Emory Healthcare** — Operating under Moody's negative outlook on its parent university, planning $1B+ in new debt issuance while Moody's explicitly cites "weak operating performance stemming largely from Emory Healthcare" as the driver of credit deterioration.
 
 ### Institutions Issuing New Debt While Operating Margin Below 2%
 
 | Institution | New Debt Issuance (Last 36 Months) | Operating Margin Context |
 |-------------|-----------------------------------|------------------------|
-| **UPMC** | Series 2025A ($372M) + 2025B ($341M) = $713M | Operating loss of -$339M in FY2024 (-1.1% margin) [UNVERIFIED] |
+| **UPMC** | **$1.6B total issuance in 2025** (Series 2025A/B/+ additional series) — largest-ever bond deal | Operating losses of -$198M (FY2023) and -$339M (FY2024, -1.1% margin); two consecutive years negative |
+| **Northwell Health** | $762.8M bond issuance (Series 2024A, closed 2024) | Operating margin 1.2% (FY2023), 1.6% (FY2024), compressing to 0.5% (Q3 2025) |
 | **Yale New Haven Health** | $669M bond issuance (May 2024) | Operating weakness cited in Moody's downgrade; margin compression ongoing |
 | **Duke University Health System** | Series 2025A/B ($489M) + Series 2025C/D/E ($254M) = ~$743M | Operating margin **-1.5%** in FY2025; downgraded Aa2→Aa3 (Dec 2022) |
 | **Emory Healthcare** | $1B+ planned (June 2025) | Moody's negative outlook citing weak healthcare operating performance |
@@ -154,6 +157,13 @@ Extrapolating for the 6 institutions with missing debt data (Penn Medicine, U of
 - [KFF — Trump Administration Moves Forward with Site-Neutral Payment Reform](https://www.kff.org/quick-take/the-trump-administration-moves-forward-with-medicare-site-neutral-payment-reform/)
 - [Health Affairs Forefront — 2026 OPPS and ASC Rule Site Neutrality](https://www.healthaffairs.org/content/forefront/promising-step-toward-site-neutrality-2026-opps-and-asc-rule-gets-right-and-s-still)
 - [MultiState — Hospital Facility Fee Legislation Gains Momentum Across 11 States](https://www.multistate.us/insider/2025/9/8/hospital-facility-fee-legislation-gains-momentum-across-11-states)
+- [Bond Buyer — Pittsburgh Healthcare Giant Bets on Good Year with Bond Deal (UPMC $1.6B)](https://www.bondbuyer.com/news/pittsburgh-healthcare-giant-bets-on-good-year-with-bond-deal)
+- [Becker's — UPMC's $1.6B Bond Issue Is Its Largest Ever](https://www.beckershospitalreview.com/capital/upmcs-1-6b-bond-issue-is-its-largest-ever/)
+- [Becker's — Fitch Revises UPMC's Outlook to Negative](https://www.beckershospitalreview.com/finance/fitch-revises-upmcs-outlook-to-negative-after-2-years-of-significant-losses/)
+- [Becker's — Fitch Raises UPMC's Outlook After $625M Operating Turnaround](https://www.beckershospitalreview.com/finance/fitch-raises-upmcs-outlook-after-625m-operating-turnaround/)
+- [DASNY — $762.8M Bond Issuance for Northwell Health](https://www.dasny.org/news/2024/dasny-closes-7628-million-bond-issuance-northwell-health-obligated-group-projects-improve)
+- [Moody's — Upgrades Stanford Health Care to Aa2](https://ratings.moodys.com/ratings-news/443182)
+- [Bond Buyer — Not-for-Profit Hospital Chains Cut Number of Ratings (OSF)](https://www.bondbuyer.com/news/not-for-profit-hospital-chains-cut-number-of-ratings-they-will-pay-for)
 
 ---
 
