@@ -25,13 +25,13 @@ Ranked by estimated long-term debt outstanding (descending).
 | 12 | Yale New Haven Health | A1 | Not Found | Stable | ~$1.7 | Not Found | **Downgraded from Aa3 to A1** (May 2023, Moody's); Fitch A+ on $669M new issuance (May 2024) |
 | 13 | Cedars-Sinai Medical Center | Aa3 | Not Found | Stable | ~$1.1 [UNVERIFIED] | Not Found | Affirmed Aa3, stable (Moody's) |
 | 14 | UC Health (Colorado) | Aa3 | Not Found | Positive | ~$1.1 [UNVERIFIED — 2021 data] | Not Found | Outlook revised to positive from stable (Feb 2021, Moody's) |
-| 15 | Northwestern Memorial HealthCare | Aa2 | Not Found | Stable | ~$1.1 [UNVERIFIED — 2019 data] | Not Found | Affirmed Aa2, stable (Moody's) |
+| 15 | Northwestern Memorial HealthCare | Aa2 | AA+ [UNVERIFIED] | Stable | ~$1.7 | Not Found | Affirmed Aa2, stable (Moody's); operating margin 3.6% (FY2024) |
 | 16 | OSF HealthCare | A2 | A | Stable [UNVERIFIED] | ~$1.1 | Not Found | Affirmed A2 (Moody's); Affirmed A, stable (S&P) |
 | 17 | Vanderbilt University Medical Center | A3 | Not Found | Stable | ~$0.9 | Not Found | Affirmed A3, outlook moved to stable (Moody's, 2019) |
 | 18 | WakeMed Health | A2 | Not Found | Stable | ~$0.76 | Not Found | Outlook revised to stable from negative; A2 affirmed (Jun 2024, Moody's) |
-| 19 | Duke University Health System | Aa2 | Not Found | Stable | Not Found | Not Found | Affirmed Aa2, stable (Moody's); Fitch downgraded from AA (Dec 2022) |
+| 19 | Duke University Health System | Aa3 | AA- | Stable | ~$2.1 | Not Found | **Downgraded from Aa2 to Aa3** (Dec 2022, Moody's); Fitch AA- affirmed on $254M Series 2025C/D/E (Dec 2025); issued ~$743M in new bonds in 2025 at -1.5% operating margin |
 | 20 | Penn Medicine (UPHS) | Aa3 | Not Found | Stable | Not Found | Not Found | Affirmed Aa3, stable (Moody's, 2021) |
-| 21 | University of Michigan Health | Aaa (university) | AAA (university) | Stable | Not Found | Not Found | University-level Aaa/AAA; hospital-specific rating not separately published |
+| 21 | University of Michigan Health | Aa2 (UMHHC) | AA+ (UMHHC) | Stable | Not Found | Not Found | Hospital-specific Aa2/AA+ (separate from university Aaa/AAA); FY2026 target margin 1.7% |
 | 22 | Houston Methodist | Not Found | AA [UNVERIFIED] | Stable | Not Found | Not Found | Fitch AA, stable; Moody's rating not confirmed in public sources |
 | 23 | Emory Healthcare | Not Found (university Aa2) | Not Found | **Negative** (university) | Not Found | Not Found | Moody's revised Emory University outlook to negative (Jan 2024); $1B+ bond sale planned (Jun 2025) |
 | 24 | UCSF Health | Aa2 (UC system) | AA (UC system) | Stable | Not Found | Not Found | Bonds issued under UC Regents; system-level Aa2/AA |
@@ -70,7 +70,7 @@ These 8 institutions carry an estimated **$18.8B+** in combined long-term debt a
 
 **~$63.8 billion** across the 18 institutions with reportable debt figures.
 
-Extrapolating for the 7 institutions with missing debt data (Duke, Penn Medicine, U of Michigan Health, Houston Methodist, Emory, UCSF Health, Ochsner), aggregate sector debt likely exceeds **$75–80 billion** [UNVERIFIED — estimate based on institutional scale].
+Extrapolating for the 6 institutions with missing debt data (Penn Medicine, U of Michigan Health, Houston Methodist, Emory, UCSF Health, Ochsner), aggregate sector debt likely exceeds **$75–80 billion** [UNVERIFIED — estimate based on institutional scale].
 
 ### Top 3 Most Exposed Institutions
 
@@ -86,6 +86,7 @@ Extrapolating for the 7 institutions with missing debt data (Duke, Penn Medicine
 |-------------|-----------------------------------|------------------------|
 | **UPMC** | Series 2025A ($372M) + 2025B ($341M) = $713M | Operating loss of -$339M in FY2024 (-1.1% margin) [UNVERIFIED] |
 | **Yale New Haven Health** | $669M bond issuance (May 2024) | Operating weakness cited in Moody's downgrade; margin compression ongoing |
+| **Duke University Health System** | Series 2025A/B ($489M) + Series 2025C/D/E ($254M) = ~$743M | Operating margin **-1.5%** in FY2025; downgraded Aa2→Aa3 (Dec 2022) |
 | **Emory Healthcare** | $1B+ planned (June 2025) | Moody's negative outlook citing weak healthcare operating performance |
 
 ---
@@ -144,6 +145,9 @@ Extrapolating for the 7 institutions with missing debt data (Duke, Penn Medicine
 - [Becker's — Moody's Upgrades Advocate Health Members](https://www.beckershospitalreview.com/finance/moodys-upgrades-advocate-health-members-credit-ratings/)
 - [Ochsner Health — Moody's Affirms A3 Rating](https://news.ochsner.org/news-releases/moodys-affirms-a3-credit-rating-with-a-stable-outlook-for-ochsner-health)
 - [Yahoo Finance — Moody's Affirms Mass General Brigham Aa3](https://finance.yahoo.com/news/massachusetts-development-finance-agency-moodys-010909085.html)
+- [Becker's — Duke Health Credit Rating Downgraded](https://www.beckershospitalreview.com/finance/duke-health-credit-rating-downgraded-amid-integration-and-macro-concerns/)
+- [NC Treasurer — LGC OKs $540M in Bonds for Duke Health](https://www.nctreasurer.gov/news/press-releases/2025/05/07/local-government-commission-oks-540-million-bonds-duke-health)
+- [Fitch Rates Duke University Health System Series 2025C/D/E AA-](https://www.tradingview.com/news/reuters.com,2025-12-03:newsml_FIT5wPknk:0-fitch-rates-duke-university-health-system-nc-s-series-2025c-d-and-e-bonds-aa-affirms-idr/)
 - [Bloomberg — Emory Floats $1B Bond Sale](https://www.bloomberg.com/news/articles/2025-05-29/emory-floats-1-billion-bond-sale-for-campus-hospital-projects)
 - [Holland & Knight — NIH Cuts Research Funding for Indirect Costs](https://www.hklaw.com/en/insights/publications/2025/02/nih-cuts-research-funding-for-indirect-costs)
 - [Health Affairs Scholar — Financial Impact of NIH Indirect Cost Cap](https://academic.oup.com/healthaffairsscholar/article/3/6/qxaf094/8123692)
