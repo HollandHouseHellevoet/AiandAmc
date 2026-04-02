@@ -346,6 +346,301 @@ function LiabilitySection() {
   );
 }
 
+/* ─── SECTION 5: POLITICAL PROTECTION ─── */
+function PoliticalSection() {
+  return (
+    <section className="content-section">
+      <div className="content-inner">
+        <div className="section-eyebrow">
+          <span className="section-num">04</span>
+          <span className="section-label">The Problem</span>
+        </div>
+        <h2 className="section-h2">The Most Connected Are the Worst Positioned</h2>
+        <div className="orange-rule" />
+        <div className="prose">
+          <p>
+            AMCs sit at the intersection of academic tenure, hospital lobbying,
+            federal grant dependency, and municipal bond markets. Each constituency
+            has a structural incentive to suppress acknowledgment of deteriorating
+            fundamentals. No board will vote to impair their own bond rating.
+          </p>
+          <p>
+            The institutions most exposed to the structural shift are also the ones
+            generating the research, training the physicians, and advising the
+            policymakers who would need to act. The information loop is captured by
+            the institutions with the most to lose from honest disclosure.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── SECTION 6: FULL BOND TABLE ─── */
+function BondTableSection() {
+  const institutions = [
+    { name: 'Advocate Health (Atrium)', moodys: 'Aa2', sp: 'N/F', outlook: 'Stable', debt: '~$7.4B', action: 'Upgraded Aa3\u2192Aa2 (Oct 2025)', unverified: true },
+    { name: 'UPMC', moodys: 'A2', sp: 'A', outlook: 'Stable', debt: '~$6.2B+', action: '$1.6B issuance (2025) after 2yr losses', unverified: false },
+    { name: 'Mass General Brigham', moodys: 'Aa3', sp: 'N/F', outlook: 'Stable', debt: '~$6.0B', action: 'Affirmed Aa3, stable', unverified: true },
+    { name: 'Cleveland Clinic', moodys: 'Aa2', sp: 'AA', outlook: 'Stable', debt: '~$5.0B', action: '$440M new issuance (2025)', unverified: true },
+    { name: 'Northwell Health', moodys: 'A3', sp: 'A-', outlook: 'Stable', debt: '~$4.9B', action: '$762.8M issuance at <2% margin', unverified: false },
+    { name: 'Mayo Clinic', moodys: 'Aa2', sp: 'AA', outlook: 'Stable', debt: '~$4.7B', action: '~$400M Series 2025 bonds', unverified: false },
+    { name: 'Intermountain Health', moodys: 'Aa1', sp: 'AA+', outlook: 'Stable', debt: '~$4.3B', action: 'Affirmed Aa1, stable', unverified: true },
+    { name: 'Baylor Scott & White', moodys: 'Aa2', sp: 'AA-', outlook: 'Stable', debt: '~$3.9B', action: 'Upgraded Aa3\u2192Aa2 (Feb 2025)', unverified: false },
+    { name: 'NYU Langone Health', moodys: 'A1', sp: 'A+', outlook: 'Stable', debt: '~$3.2B', action: 'Affirmed A1, stable (Feb 2025)', unverified: false },
+    { name: 'Stanford Health Care', moodys: 'Aa2', sp: 'AA-', outlook: 'Stable', debt: '~$2.2B', action: 'Upgraded Aa3\u2192Aa2 (May 2025)', unverified: false },
+    { name: 'Duke Univ Health System', moodys: 'Aa3', sp: 'AA-', outlook: 'Stable', debt: '~$2.1B', action: '~$743M issuance at -1.5% margin', unverified: false },
+    { name: 'Johns Hopkins', moodys: 'Aa2', sp: 'N/F', outlook: 'Stable', debt: '~$1.9B', action: 'Affirmed Aa2, stable', unverified: true },
+    { name: 'Yale New Haven Health', moodys: 'A1', sp: 'N/F', outlook: 'Stable', debt: '~$1.7B', action: 'Downgraded Aa3\u2192A1 (May 2023)', unverified: false },
+    { name: 'Northwestern Memorial', moodys: 'Aa2', sp: 'AA+', outlook: 'Stable', debt: '~$1.7B', action: 'Affirmed Aa2, stable', unverified: true },
+    { name: 'Cedars-Sinai', moodys: 'Aa3', sp: 'N/F', outlook: 'Stable', debt: '~$1.1B', action: 'Affirmed Aa3, stable', unverified: true },
+    { name: 'UC Health (Colorado)', moodys: 'Aa3', sp: 'N/F', outlook: 'Positive', debt: '~$1.1B', action: 'Outlook \u2192 positive (2021)', unverified: true },
+    { name: 'OSF HealthCare', moodys: 'WD', sp: 'A', outlook: 'Stable', debt: 'N/F', action: "Moody's withdrawn (Oct 2022)", unverified: false },
+    { name: 'Vanderbilt UMC', moodys: 'A3', sp: 'N/F', outlook: 'Stable', debt: '~$0.9B', action: 'Affirmed A3, stable (2019)', unverified: false },
+    { name: 'WakeMed', moodys: 'A2', sp: 'N/F', outlook: 'Stable', debt: '~$0.76B', action: 'Outlook stable from negative (2024)', unverified: false },
+    { name: 'Penn Medicine (UPHS)', moodys: 'Aa3', sp: 'N/F', outlook: 'Stable', debt: 'N/F', action: 'Affirmed Aa3, stable (2021)', unverified: false },
+    { name: 'U of Michigan Health', moodys: 'Aa2', sp: 'AA+', outlook: 'Stable', debt: 'N/F', action: 'Hospital Aa2/AA+ (univ Aaa/AAA)', unverified: false },
+    { name: 'Houston Methodist', moodys: 'N/F', sp: 'AA', outlook: 'Stable', debt: 'N/F', action: 'Fitch AA, stable', unverified: true },
+    { name: 'Emory Healthcare', moodys: 'N/F', sp: 'N/F', outlook: 'Negative', debt: 'N/F', action: '$1B+ issuance planned (2025)', unverified: false },
+    { name: 'UCSF Health', moodys: 'Aa2*', sp: 'AA*', outlook: 'Stable', debt: 'N/F', action: 'UC system-level ratings', unverified: false },
+    { name: 'Ochsner Health', moodys: 'A3', sp: 'A', outlook: 'Stable', debt: 'N/F', action: 'Affirmed A3/A, stable', unverified: false },
+  ];
+
+  return (
+    <section className="content-section" id="the-data">
+      <div className="content-inner">
+        <div className="section-eyebrow">
+          <span className="section-num">05</span>
+          <span className="section-label">The Data</span>
+        </div>
+        <h2 className="section-h2">Bond Ratings — All 25 Academic Medical Centers</h2>
+        <div className="orange-rule" />
+
+        <div className="table-wrap">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Institution</th>
+                <th>Moody&apos;s</th>
+                <th>S&amp;P</th>
+                <th>Outlook</th>
+                <th>Est. LT Debt</th>
+                <th>Recent Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {institutions.map((inst, i) => (
+                <tr key={i}>
+                  <td className="institution">{inst.name}</td>
+                  <td>{inst.moodys}</td>
+                  <td>{inst.sp}</td>
+                  <td style={inst.outlook === 'Negative' ? { color: '#c0392b', fontWeight: 600 } : undefined}>
+                    {inst.outlook}
+                  </td>
+                  <td className="mono">
+                    {inst.debt}
+                    {inst.unverified && <span className="unverified-dot" title="Unverified" />}
+                  </td>
+                  <td>{inst.action}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="table-caption">
+          Source: Moody&apos;s Investors Service, S&amp;P Global Ratings, Fitch Ratings, EMMA/MSRB,
+          institutional financial reports. Amber dots indicate unverified figures derived from
+          older filings. N/F = Not Found. WD = Withdrawn. * = System-level rating.
+        </p>
+
+        {/* Summary stats */}
+        <div className="stats-row">
+          <div className="card">
+            <div className="card-figure">8</div>
+            <div className="card-label">Below Aa3 / AA-</div>
+            <p className="card-desc">
+              32% of the cohort rated below the Aa3/AA- threshold, carrying ~$18.8B+
+              in combined long-term debt.
+            </p>
+          </div>
+          <div className="card">
+            <div className="card-figure">1</div>
+            <div className="card-label">Negative Outlook</div>
+            <p className="card-desc">
+              Emory Healthcare on confirmed negative outlook. WakeMed and Yale New
+              Haven recently stabilized from negative.
+            </p>
+          </div>
+          <div className="card">
+            <div className="card-figure">$75B+</div>
+            <div className="card-label">Aggregate LT Debt</div>
+            <p className="card-desc">
+              Estimated aggregate long-term debt across all 25 institutions. $63.8B
+              confirmed; remainder extrapolated.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── SECTION 7: SCENARIOS ─── */
+function ScenariosSection() {
+  return (
+    <section className="content-section" id="scenarios">
+      <div className="content-inner">
+        <div className="section-eyebrow">
+          <span className="section-num">06</span>
+          <span className="section-label">Forward</span>
+        </div>
+        <h2 className="section-h2">Three Plausible Scenarios</h2>
+        <div className="orange-rule" />
+
+        <div className="card-grid">
+          <div className="card">
+            <span className="card-score low">LOW</span>
+            <h3>Orderly Deleveraging</h3>
+            <div className="card-status">Low Probability</div>
+            <p>
+              A handful of well-capitalized AMCs recognize the structural shift
+              early. The sector bifurcates. This scenario requires board-level
+              honesty that has no historical precedent in this sector.
+            </p>
+          </div>
+          <div className="card">
+            <span className="card-score high">HIGH</span>
+            <h3>Federal Bailout</h3>
+            <div className="card-status">Most Likely</div>
+            <p>
+              Margin compression and NIH funding pressure create a slow-motion
+              liquidity crisis at 6-10 major AMCs. Congress intervenes under the
+              framing of protecting physician training capacity. Taxpayers absorb
+              the loss.
+            </p>
+          </div>
+          <div className="card">
+            <span className="card-score critical">CRITICAL</span>
+            <h3>Collapse and Redistribution</h3>
+            <div className="card-status">Tail Risk — Growing</div>
+            <p>
+              A credit event at one or two major AMCs cascades into a broader
+              repricing of the sector. New issuance becomes prohibitively expensive.
+              Physician training redistributes to community hospitals and simulation
+              centers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── SECTION 8: WHO PAYS ─── */
+function WhoPaysSection() {
+  return (
+    <section className="content-section" id="about">
+      <div className="content-inner">
+        <div className="section-eyebrow">
+          <span className="section-num">07</span>
+          <span className="section-label">The Reckoning</span>
+        </div>
+        <h2 className="section-h2">Who Pays</h2>
+        <div className="orange-rule" />
+        <div className="prose">
+          <p>
+            The debt was issued to bondholders — pension funds, municipal bond
+            funds, and retail investors in tax-advantaged accounts. If the
+            institutions restructure, those investors take haircuts. If the federal
+            government intervenes, taxpayers absorb the cost through program
+            expansion rather than explicit bailout.
+          </p>
+          <p>
+            The people who will pay are the ones who had no seat at the table when
+            the bonds were issued: taxpayers, younger physicians entering a system
+            shaped by infrastructure decisions made before they started medical
+            school, and the communities that assumed these institutions were
+            permanent.
+          </p>
+        </div>
+        <p className="closing-line">
+          The institutions will frame any intervention as mission preservation.
+          It will be liability transfer.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/* ─── SECTION 9: CITATIONS ─── */
+function CitationsSection() {
+  return (
+    <section className="content-section">
+      <div className="content-inner">
+        <div className="section-eyebrow">
+          <span className="section-num">08</span>
+          <span className="section-label">Sources</span>
+        </div>
+        <h2 className="section-h2">Primary Sources</h2>
+        <div className="orange-rule" />
+        <ol className="citations-list">
+          <li>
+            <div>
+              <span className="citation-title">EMMA / MSRB — Electronic Municipal Market Access</span>
+              <span className="citation-url">emma.msrb.org</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span className="citation-title">Moody&apos;s Investors Service — Healthcare Sector Reports</span>
+              <span className="citation-url">moodys.com</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span className="citation-title">S&amp;P Global Ratings — Healthcare Issuers</span>
+              <span className="citation-url">spglobal.com/ratings</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span className="citation-title">IRS Form 990 via ProPublica Nonprofit Explorer</span>
+              <span className="citation-url">projects.propublica.org/nonprofits</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span className="citation-title">CMS Hospital Cost Report (HCRIS)</span>
+              <span className="citation-url">cms.gov/data-research</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span className="citation-title">NIH Office of Budget — Indirect Cost Recovery Data</span>
+              <span className="citation-url">officeofbudget.od.nih.gov</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span className="citation-title">Becker&apos;s Hospital Review — Rating Actions &amp; Financial Reports</span>
+              <span className="citation-url">beckershospitalreview.com</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span className="citation-title">The Bond Buyer — Municipal Bond Issuance Reporting</span>
+              <span className="citation-url">bondbuyer.com</span>
+            </div>
+          </li>
+        </ol>
+        <p className="table-caption" style={{ marginTop: '24px' }}>
+          Dutch Rojas &middot; Rojas Media LLC &middot; Last updated April 2, 2026
+        </p>
+      </div>
+    </section>
+  );
+}
+
 /* ─── PAGE ─── */
 export default function HomePage() {
   return (
@@ -394,7 +689,20 @@ export default function HomePage() {
       {/* 4. Why It's a Liability */}
       <LiabilitySection />
 
-      {/* Sections 5-9 will be added in Commit 2 */}
+      {/* 5. Political Protection */}
+      <PoliticalSection />
+
+      {/* 6. Full Bond Ratings Table */}
+      <BondTableSection />
+
+      {/* 7. Three Scenarios */}
+      <ScenariosSection />
+
+      {/* 8. Who Pays */}
+      <WhoPaysSection />
+
+      {/* 9. Citations */}
+      <CitationsSection />
 
       <Footer />
     </>

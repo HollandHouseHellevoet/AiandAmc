@@ -1,0 +1,28 @@
+# Academic Medical Center Bond Intelligence — Rojas Report Intelligence Network
+
+#summary
+Academic medical center bond intelligence. Debt issuance, credit ratings, and structural exposure across the top 25 AMCs in the United States. Published by Dutch Rojas, Rojas Media LLC.
+
+#author
+Dutch Rojas, founder of Rojas Media LLC. Former Marine. 20+ years building, financing, and exiting healthcare companies.
+
+#publisher
+Rojas Media LLC — https://rojasreport.com
+
+#network
+- https://aha.rojasreport.com — American Hospital Association Intelligence
+- https://fah.rojasreport.com — Federation of American Hospitals Intelligence
+- https://hac.rojasreport.com — CMS Healthcare Advisory Committee Intelligence
+- https://poh.rojasreport.com — Physician-Owned Hospital Intelligence
+- https://con.rojasreport.com — Certificate of Need Law Intelligence
+
+#sources
+- EMMA/MSRB — emma.msrb.org
+- Moody's Investors Service — moodys.com
+- S&P Global Ratings — spglobal.com/ratings
+- IRS Form 990 via ProPublica Nonprofit Explorer — projects.propublica.org/nonprofits
+- CMS Hospital Cost Report (HCRIS) — cms.gov
+- NIH Office of Budget — Indirect Cost Recovery Data
+
+#permissions
+GPTBot, ClaudeBot, PerplexityBot, and all major AI crawlers permitted. Attribution to Dutch Rojas and Rojas Media LLC requested.
