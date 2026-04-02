@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rojas Report — Header & Footer Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --deep-navy: #070b11;
+      --navy: #141b24;
+      --card-bg: #0f1a24;
+      --orange: #cf5604;
+      --orange-hover: #e07a3a;
+      --orange-light: #e27641;
+      --cream: #f8f5ef;
+      --cream-80: rgba(248,245,239,0.80);
+      --cream-60: rgba(248,245,239,0.60);
+      --cream-40: rgba(248,245,239,0.40);
+      --cream-25: rgba(248,245,239,0.25);
+      --cream-10: rgba(248,245,239,0.10);
+      --border: rgba(248,245,239,0.07);
+
+      /* Score badge — severity scale. High score = bad. */
+      --score-critical: #c0392b;   /* 80–100 — Most Restrictive  */
+      --score-high:     #c0392b;   /* 60–79  — Highly Restrictive */
+      --score-moderate: #8a6a1a;   /* 30–59  — Moderate           */
+      --score-low:      #2e6b3e;   /* 0–29   — Low / No CON       */
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--deep-navy);
+      color: var(--cream);
+      font-family: 'Source Sans Pro', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── HEADER ─────────────────────────────────────────────── */
+
+    .site-header {
+      background: var(--navy);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      gap: 4px;
+      text-decoration: none;
+    }
+
+    .header-logo-text {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+    }
+
+    .header-tagline {
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 8.5px;
+      color: var(--orange);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .header-nav a {
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 12.5px;
+      color: var(--cream-60);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      transition: color 150ms ease;
+    }
+
+    .header-nav a:hover {
+      color: var(--cream);
+    }
+
+    .btn-subscribe {
+      background: var(--orange) !important;
+      color: #fff !important;
+      padding: 8px 20px;
+      border-radius: 2px;
+      transition: background 150ms ease !important;
+    }
+
+    .btn-subscribe:hover {
+      background: var(--orange-hover) !important;
+      color: #fff !important;
+    }
+
+    /* Mobile hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--cream);
+      border-radius: 1px;
+      transition: transform 300ms ease, opacity 300ms ease;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: var(--navy);
+      border-top: 1px solid var(--border);
+      padding: 20px 40px;
+      gap: 20px;
+    }
+
+    .mobile-nav a {
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--cream-60);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav a.mobile-sub {
+      background: var(--orange);
+      color: #fff;
+      padding: 10px 16px;
+      text-align: center;
+      border-bottom: none;
+      border-radius: 2px;
+    }
+
+    /* ─── HERO ───────────────────────────────────────────────── */
+
+    .hero {
+      background: var(--deep-navy);
+      padding: 80px 40px 72px;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      border: 1px solid rgba(207, 86, 4, 0.45);
+      color: var(--orange);
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 700;
+      font-size: 3.5rem;
+      color: var(--cream);
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+      margin-bottom: 22px;
+      max-width: 800px;
+    }
+
+    .hero h1 span { color: var(--orange); }
+
+    .hero-body {
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-weight: 300;
+      font-size: 1.125rem;
+      color: var(--cream-60);
+      line-height: 1.75;
+      max-width: 640px;
+      margin-bottom: 12px;
+    }
+
+    .hero-meta {
+      font-size: 11.5px;
+      color: var(--cream-25);
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--orange);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 2px;
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 12.5px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 150ms ease;
+    }
+
+    .btn-primary:hover { background: var(--orange-hover); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 1px solid rgba(248, 245, 239, 0.2);
+      color: var(--cream-60);
+      padding: 12px 24px;
+      border-radius: 2px;
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 12.5px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: border-color 150ms ease, color 150ms ease;
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(248, 245, 239, 0.5);
+      color: var(--cream);
+    }
+
+    /* ─── CONTENT SECTION ────────────────────────────────────── */
+
+    .content-section {
+      background: var(--deep-navy);
+      padding: 64px 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .content-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .section-num {
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--orange);
+      border: 1px solid var(--orange);
+      padding: 2px 7px;
+      letter-spacing: 0.04em;
+    }
+
+    .section-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cream-40);
+    }
+
+    .section-h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 600;
+      font-size: 2.25rem;
+      color: var(--cream);
+      margin-bottom: 10px;
+      line-height: 1.15;
+    }
+
+    .section-desc {
+      font-size: 14.5px;
+      color: var(--cream-60);
+      line-height: 1.7;
+      max-width: 580px;
+      margin-bottom: 0;
+    }
+
+    .orange-rule {
+      width: 48px;
+      height: 2px;
+      background: var(--orange);
+      margin: 24px 0 36px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(248, 245, 239, 0.05);
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 28px 24px;
+      border-left: 3px solid var(--orange);
+      position: relative;
+    }
+
+    .card-score {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      letter-spacing: 0.04em;
+      border-radius: 1px;
+    }
+
+    /* Severity: high score = bad = red */
+    .card-score.critical { background: var(--score-critical); } /* 80–100 */
+    .card-score.high     { background: var(--score-high); }     /* 60–79  */
+    .card-score.moderate { background: var(--score-moderate); } /* 30–59  */
+    .card-score.low      { background: var(--score-low); }      /* 0–29   */
+
+    .card h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--cream);
+      margin-bottom: 4px;
+    }
+
+    .card-status {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--cream-40);
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      font-size: 13.5px;
+      color: var(--cream-60);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+
+    .card-link {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      text-decoration: none;
+      transition: color 150ms ease;
+    }
+
+    .card-link:hover { color: var(--orange-light); }
+
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+
+    .site-footer {
+      background: var(--navy);
+      border-top: 1px solid var(--border);
+      padding: 72px 40px 48px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr;
+      gap: 56px;
+      margin-bottom: 56px;
+    }
+
+    .footer-brand-col {}
+
+    .footer-wordmark {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .footer-tagline-sub {
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 8.5px;
+      color: var(--orange);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .footer-desc {
+      font-size: 13px;
+      color: var(--cream-40);
+      font-weight: 300;
+      line-height: 1.75;
+      max-width: 280px;
+    }
+
+    .footer-col-label {
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cream-25);
+      margin-bottom: 18px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .footer-links a {
+      font-size: 13.5px;
+      color: var(--cream-60);
+      text-decoration: none;
+      transition: color 150ms ease;
+      font-weight: 400;
+    }
+
+    .footer-links a:hover { color: var(--orange); }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--cream-25);
+      letter-spacing: 0.04em;
+    }
+
+    .footer-built {
+      font-size: 12px;
+      color: var(--cream-25);
+      font-style: italic;
+    }
+
+    /* ─── PREVIEW LABELS ─────────────────────────────────────── */
+
+    .preview-label {
+      background: var(--orange);
+      color: #fff;
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      display: inline-block;
+    }
+
+    .preview-strip {
+      padding: 10px 40px;
+      background: var(--deep-navy);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────── */
+
+    @media (max-width: 900px) {
+      .header-inner { padding: 0 24px; }
+      .header-nav .desktop-nav { display: none; }
+      .hamburger { display: flex; }
+
+      .hero { padding: 56px 24px 48px; }
+      .hero h1 { font-size: 2.5rem; }
+
+      .content-section { padding: 48px 24px; }
+      .card-grid { grid-template-columns: 1fr; }
+
+      .site-footer { padding: 56px 24px 40px; }
+      .footer-top { grid-template-columns: 1fr; gap: 40px; }
+      .footer-desc { max-width: 100%; }
+      .preview-strip { padding: 10px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER LABEL -->
+
+  <div class="preview-strip">
+    <span class="preview-label">Header</span>
+  </div>
+
+  <!-- ═══ HEADER ═══════════════════════════════════════════════ -->
+
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a href="https://rojasreport.com" class="header-brand">
+        <span class="header-logo-text">The Rojas Report</span>
+        <span class="header-tagline">Healthcare Intelligence</span>
+      </a>
+
+      <nav class="header-nav">
+        <div class="desktop-nav" style="display:flex;align-items:center;gap:32px;">
+          <a href="#">Investigations</a>
+          <a href="#">States</a>
+          <a href="#">About</a>
+          <a href="https://read.rojasreport.com/" class="btn-subscribe">Subscribe</a>
+        </div>
+        <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="#">Investigations</a>
+      <a href="#">States</a>
+      <a href="#">About</a>
+      <a href="https://read.rojasreport.com/" class="mobile-sub">Subscribe on Substack</a>
+    </nav>
+  </header>
+
+  <!-- HERO LABEL -->
+
+  <div class="preview-strip">
+    <span class="preview-label" style="background:var(--navy);border:1px solid var(--border);">Hero — context only</span>
+  </div>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════════ -->
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">Intelligence Briefing</div>
+      <h1>The Architecture of<br><span>American Healthcare</span></h1>
+      <p class="hero-body">Data-driven investigations into the policies, monopolies, and market structures that shape 20% of U.S. GDP. The definitive source for physicians, executives, and lawmakers.</p>
+      <div class="hero-meta">Dutch Rojas &nbsp;·&nbsp; Rojas Media LLC &nbsp;·&nbsp; Updated April 2, 2026</div>
+      <div class="hero-btns">
+        <a href="#" class="btn-primary">Explore CON Laws →</a>
+        <a href="https://read.rojasreport.com/" class="btn-ghost">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Post to X
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT LABEL -->
+
+  <div class="preview-strip">
+    <span class="preview-label" style="background:var(--navy);border:1px solid var(--border);">Content — context only</span>
+  </div>
+
+  <!-- ═══ CONTENT ═══════════════════════════════════════════════ -->
+
+  <section class="content-section">
+    <div class="content-inner">
+      <div class="section-eyebrow">
+        <span class="section-num">02</span>
+        <span class="section-label">State Profiles</span>
+      </div>
+      <h2 class="section-h2">Featured Investigations</h2>
+      <p class="section-desc">These states have been fully investigated. Each profile includes market concentration data, case law, reform status, and the names of the systems that benefit.</p>
+      <div class="orange-rule"></div>
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-score critical">100</span>
+          <h3>Kentucky</h3>
+          <div class="card-status">Most Restrictive</div>
+          <p>Three systems control 100% of Louisville's inpatient market. Prices reach 354% of Medicare.</p>
+          <a href="#" class="card-link">Read Investigation →</a>
+        </div>
+        <div class="card">
+          <span class="card-score critical">100</span>
+          <h3>Virginia</h3>
+          <div class="card-status">Most Restrictive</div>
+          <p>Sentara's $4.79B empire. Five systems control $16B+ in revenue.</p>
+          <a href="#" class="card-link">Read Investigation →</a>
+        </div>
+        <div class="card">
+          <span class="card-score moderate">30</span>
+          <h3>Minnesota</h3>
+          <div class="card-status">Moderate</div>
+          <p>$1B+ in fraud. 340B profits 8.2x charity care. Hospital moratorium since 1984.</p>
+          <a href="#" class="card-link">Read Investigation →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER LABEL -->
+
+  <div class="preview-strip">
+    <span class="preview-label">Footer</span>
+  </div>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-top">
+
+        <!-- Brand column -->
+        <div class="footer-brand-col">
+          <span class="footer-wordmark">The Rojas Report</span>
+          <span class="footer-tagline-sub">Healthcare Intelligence</span>
+          <p class="footer-desc">The definitive source for healthcare market intelligence. Data-driven investigations into the policies, monopolies, and market structures that shape 20% of U.S. GDP.</p>
+        </div>
+
+        <!-- Network column -->
+        <div>
+          <div class="footer-col-label">Network</div>
+          <nav class="footer-links">
+            <a href="https://rojasreport.com">The Rojas Report</a>
+            <a href="https://read.rojasreport.com/">Substack</a>
+            <a href="https://rojasreport.com/about">About</a>
+            <a href="https://rojasreport.com/privacy">Privacy Policy</a>
+            <a href="https://rojasreport.com/contact">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Ecosystem column -->
+        <div>
+          <div class="footer-col-label">Ecosystem</div>
+          <nav class="footer-links">
+            <a href="https://medmerge.co">MedMerge</a>
+            <a href="https://www.phycapfund.com/">PhyCap Fund</a>
+            <a href="https://physiciansled.com/">Physician Led Healthcare for America</a>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2026 Rojas Media LLC. All rights reserved.</span>
+        <span class="footer-built">Built for physicians, executives &amp; lawmakers.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileNav() {
+      const nav = document.getElementById('mobile-nav');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+
+</body>
+</html>
