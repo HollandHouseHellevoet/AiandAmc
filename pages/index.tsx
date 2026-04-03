@@ -147,9 +147,6 @@ function HeroSection() {
           that issued it will be the last to admit the collateral is obsolete — and
           the first to ask for a bailout.
         </p>
-        <div className="hero-meta">
-          Dutch Rojas &nbsp;&middot;&nbsp; Rojas Media LLC &nbsp;&middot;&nbsp; April 2, 2026
-        </div>
         <div className="hero-btns">
           <a href="#finding" className="btn-primary">Read the Thesis &rarr;</a>
           <a
