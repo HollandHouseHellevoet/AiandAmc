@@ -40,6 +40,16 @@ const JSON_LD = {
       url: 'https://academic.rojasreport.com',
       publisher: { '@type': 'Organization', name: 'Rojas Media LLC' },
     },
+    {
+      '@type': 'Article',
+      headline: 'The AMC Debt Trap: The Most Protected Are the Most Exposed',
+      datePublished: '2026-04-02',
+      dateModified: '2026-04-02',
+      author: { '@type': 'Person', name: 'Dutch Rojas' },
+      publisher: { '@type': 'Organization', name: 'Rojas Media LLC' },
+      url: 'https://academic.rojasreport.com/',
+      image: 'https://academic.rojasreport.com/og-image.png',
+    },
   ],
 };
 
@@ -128,9 +138,9 @@ function HeroSection() {
         <h1>
           The AMC Debt Trap
         </h1>
-        <h1 style={{ marginTop: '-10px' }}>
+        <h2 style={{ marginTop: '-10px' }}>
           The Most Protected Are the <span>Most Exposed</span>
-        </h1>
+        </h2>
         <p className="hero-body">
           Academic medical centers borrowed at scale for forty years on a credential
           scarcity argument that no longer holds. The debt remains. The institutions
@@ -584,37 +594,37 @@ function CitationsSection() {
         <ol className="citations-list">
           <li>
             <div>
-              <span className="citation-title">EMMA / MSRB — Electronic Municipal Market Access</span>
+              <a href="https://emma.msrb.org" target="_blank" rel="noopener noreferrer" className="citation-title">EMMA / MSRB — Electronic Municipal Market Access</a>
               <span className="citation-url">emma.msrb.org</span>
             </div>
           </li>
           <li>
             <div>
-              <span className="citation-title">Moody&apos;s Investors Service — Healthcare Sector Reports</span>
+              <a href="https://www.moodys.com" target="_blank" rel="noopener noreferrer" className="citation-title">Moody&apos;s Investors Service — Healthcare Sector Reports</a>
               <span className="citation-url">moodys.com</span>
             </div>
           </li>
           <li>
             <div>
-              <span className="citation-title">S&amp;P Global Ratings — Healthcare Issuers</span>
+              <a href="https://www.spglobal.com/ratings" target="_blank" rel="noopener noreferrer" className="citation-title">S&amp;P Global Ratings — Healthcare Issuers</a>
               <span className="citation-url">spglobal.com/ratings</span>
             </div>
           </li>
           <li>
             <div>
-              <span className="citation-title">IRS Form 990 via ProPublica Nonprofit Explorer</span>
+              <a href="https://projects.propublica.org/nonprofits" target="_blank" rel="noopener noreferrer" className="citation-title">IRS Form 990 via ProPublica Nonprofit Explorer</a>
               <span className="citation-url">projects.propublica.org/nonprofits</span>
             </div>
           </li>
           <li>
             <div>
-              <span className="citation-title">CMS Hospital Cost Report (HCRIS)</span>
+              <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/cost-reports" target="_blank" rel="noopener noreferrer" className="citation-title">CMS Hospital Cost Report (HCRIS)</a>
               <span className="citation-url">cms.gov/data-research</span>
             </div>
           </li>
           <li>
             <div>
-              <span className="citation-title">NIH Office of Budget — Indirect Cost Recovery Data</span>
+              <a href="https://officeofbudget.od.nih.gov" target="_blank" rel="noopener noreferrer" className="citation-title">NIH Office of Budget — Indirect Cost Recovery Data</a>
               <span className="citation-url">officeofbudget.od.nih.gov</span>
             </div>
           </li>
@@ -649,14 +659,15 @@ export default function HomePage() {
           name="description"
           content="Academic medical centers borrowed at scale for forty years on a credential scarcity argument that no longer holds. The data is in."
         />
-        <link rel="canonical" href="https://academic.rojasreport.com" />
+        <link rel="canonical" href="https://academic.rojasreport.com/" />
+        <meta name="robots" content="index, follow" />
         <meta property="og:title" content="The AMC Debt Trap | Rojas Report" />
         <meta
           property="og:description"
           content="Academic medical centers borrowed at scale for forty years on a credential scarcity argument that no longer holds. The data is in."
         />
         <meta property="og:image" content="https://academic.rojasreport.com/og-image.png" />
-        <meta property="og:url" content="https://academic.rojasreport.com" />
+        <meta property="og:url" content="https://academic.rojasreport.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Rojas Report" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -675,32 +686,34 @@ export default function HomePage() {
 
       <Header />
 
-      {/* 1. Hero */}
-      <HeroSection />
+      <main>
+        {/* 1. Hero */}
+        <HeroSection />
 
-      {/* 2. Key Finding */}
-      <FindingSection />
+        {/* 2. Key Finding */}
+        <FindingSection />
 
-      {/* 3. Why It Worked */}
-      <WhyItWorkedSection />
+        {/* 3. Why It Worked */}
+        <WhyItWorkedSection />
 
-      {/* 4. Why It's a Liability */}
-      <LiabilitySection />
+        {/* 4. Why It's a Liability */}
+        <LiabilitySection />
 
-      {/* 5. Political Protection */}
-      <PoliticalSection />
+        {/* 5. Political Protection */}
+        <PoliticalSection />
 
-      {/* 6. Full Bond Ratings Table */}
-      <BondTableSection />
+        {/* 6. Full Bond Ratings Table */}
+        <BondTableSection />
 
-      {/* 7. Three Scenarios */}
-      <ScenariosSection />
+        {/* 7. Three Scenarios */}
+        <ScenariosSection />
 
-      {/* 8. Who Pays */}
-      <WhoPaysSection />
+        {/* 8. Who Pays */}
+        <WhoPaysSection />
 
-      {/* 9. Citations */}
-      <CitationsSection />
+        {/* 9. Citations */}
+        <CitationsSection />
+      </main>
 
       <Footer />
     </>
