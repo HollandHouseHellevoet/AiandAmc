@@ -592,49 +592,49 @@ function CitationsSection() {
           <li>
             <div>
               <a href="https://emma.msrb.org" target="_blank" rel="noopener noreferrer" className="citation-title">EMMA / MSRB — Electronic Municipal Market Access</a>
-              <span className="citation-url">emma.msrb.org</span>
+              <a href="https://emma.msrb.org" target="_blank" rel="noopener noreferrer" className="citation-url">emma.msrb.org</a>
             </div>
           </li>
           <li>
             <div>
               <a href="https://www.moodys.com" target="_blank" rel="noopener noreferrer" className="citation-title">Moody&apos;s Investors Service — Healthcare Sector Reports</a>
-              <span className="citation-url">moodys.com</span>
+              <a href="https://www.moodys.com" target="_blank" rel="noopener noreferrer" className="citation-url">moodys.com</a>
             </div>
           </li>
           <li>
             <div>
               <a href="https://www.spglobal.com/ratings" target="_blank" rel="noopener noreferrer" className="citation-title">S&amp;P Global Ratings — Healthcare Issuers</a>
-              <span className="citation-url">spglobal.com/ratings</span>
+              <a href="https://www.spglobal.com/ratings" target="_blank" rel="noopener noreferrer" className="citation-url">spglobal.com/ratings</a>
             </div>
           </li>
           <li>
             <div>
               <a href="https://projects.propublica.org/nonprofits" target="_blank" rel="noopener noreferrer" className="citation-title">IRS Form 990 via ProPublica Nonprofit Explorer</a>
-              <span className="citation-url">projects.propublica.org/nonprofits</span>
+              <a href="https://projects.propublica.org/nonprofits" target="_blank" rel="noopener noreferrer" className="citation-url">projects.propublica.org/nonprofits</a>
             </div>
           </li>
           <li>
             <div>
               <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/cost-reports" target="_blank" rel="noopener noreferrer" className="citation-title">CMS Hospital Cost Report (HCRIS)</a>
-              <span className="citation-url">cms.gov/data-research</span>
+              <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/cost-reports" target="_blank" rel="noopener noreferrer" className="citation-url">cms.gov/data-research</a>
             </div>
           </li>
           <li>
             <div>
               <a href="https://officeofbudget.od.nih.gov" target="_blank" rel="noopener noreferrer" className="citation-title">NIH Office of Budget — Indirect Cost Recovery Data</a>
-              <span className="citation-url">officeofbudget.od.nih.gov</span>
+              <a href="https://officeofbudget.od.nih.gov" target="_blank" rel="noopener noreferrer" className="citation-url">officeofbudget.od.nih.gov</a>
             </div>
           </li>
           <li>
             <div>
-              <span className="citation-title">Becker&apos;s Hospital Review — Rating Actions &amp; Financial Reports</span>
-              <span className="citation-url">beckershospitalreview.com</span>
+              <a href="https://www.beckershospitalreview.com" target="_blank" rel="noopener noreferrer" className="citation-title">Becker&apos;s Hospital Review — Rating Actions &amp; Financial Reports</a>
+              <a href="https://www.beckershospitalreview.com" target="_blank" rel="noopener noreferrer" className="citation-url">beckershospitalreview.com</a>
             </div>
           </li>
           <li>
             <div>
-              <span className="citation-title">The Bond Buyer — Municipal Bond Issuance Reporting</span>
-              <span className="citation-url">bondbuyer.com</span>
+              <a href="https://www.bondbuyer.com" target="_blank" rel="noopener noreferrer" className="citation-title">The Bond Buyer — Municipal Bond Issuance Reporting</a>
+              <a href="https://www.bondbuyer.com" target="_blank" rel="noopener noreferrer" className="citation-url">bondbuyer.com</a>
             </div>
           </li>
         </ol>
