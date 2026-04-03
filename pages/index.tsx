@@ -57,7 +57,6 @@ function Header() {
             <a href="#thesis">Thesis</a>
             <a href="#the-data">The Data</a>
             <a href="#scenarios">Scenarios</a>
-            <a href="#about">About</a>
             <a href="https://read.rojasreport.com/" className="btn-subscribe">Subscribe</a>
           </div>
           <button className="hamburger" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu">
@@ -69,7 +68,6 @@ function Header() {
         <a href="#thesis">Thesis</a>
         <a href="#the-data">The Data</a>
         <a href="#scenarios">Scenarios</a>
-        <a href="#about">About</a>
         <a href="https://read.rojasreport.com/" className="mobile-sub">Subscribe on Substack</a>
       </nav>
     </header>
@@ -96,7 +94,7 @@ function Footer() {
               <a href="https://rojasreport.com">The Rojas Report</a>
               <a href="https://read.rojasreport.com/">Substack</a>
               <a href="https://rojasreport.com/about">About</a>
-              <a href="https://rojasreport.com/privacy">Privacy Policy</a>
+              <a href="https://aha.rojasreport.com/privacy/">Privacy Policy</a>
               <a href="https://rojasreport.com/contact">Contact</a>
             </nav>
           </div>
